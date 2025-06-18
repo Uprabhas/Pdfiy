@@ -1,0 +1,20 @@
+.mat-menu-item {
+  color: white;
+  min-height: 30px;
+}
+
+.login{
+  width: 40px;
+  height: 40px;
+}
+
+::ng-deep {
+  .mat-mdc-menu-panel {
+    background-color: rgb(71, 63, 141) !important;
+  }
+
+  .mat_container{
+    background-color: #fff !important;
+  }
+
+}

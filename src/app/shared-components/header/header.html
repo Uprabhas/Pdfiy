@@ -1,0 +1,104 @@
+<div
+    class="sticky top-0 z-40 w-[100%] backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-gray-300 supports-backdrop-blur:bg-white/60 dark:bg">
+    <div class=" mx-auto">
+        <div class="flex py-2 border-b border-slate-900/10 lg:px-8 lg:border-0 dark:border-slate-300/10 lg:mx-0">
+            <div class="relative flex items-center mx-6">
+                <!-- <img class="max-h-[30px]" src="./assets/image/logo.png" alt="" srcset=""> -->
+                <a href="">Editify </a>
+            </div>
+            <div class="flex justify-between w-lvw">
+                <div class="flex items-center gap-3 max-md:hidden lg:gap-6">
+                    <li class="list-none">
+                        <button matButton [matMenuTriggerFor]="menu"
+                            class="flex items-center gap-0.5 rounded-2xl bg-gray-950/5 py-0.5 pr-1.5 pl-2.5 text-xs/5 font-medium text-gray-950 tabular-nums hover:bg-gray-950/7.5 data-active:bg-gray-950/7.5 dark:bg-white/10 dark:text-black dark:hover:bg-white/12.5 dark:data-active:bg-white/12.5"
+                            aria-label="Select version of library" id="headlessui-menu-button-«R3pbelb»" type="button"
+                            aria-haspopup="menu" aria-expanded="false" data-headlessui-state="open active" data-open=""
+                            data-active="" aria-controls="headlessui-menu-items-«R5pbelb»" data-headlessui-state>
+                            convert
+                        </button>
+                        <mat-menu class="mat_menu" #menu="matMenu">
+                            <button
+                                class="mat-menu-item t-2 rounded-xl bg-red-900 p-1 py-1 text-xs/7 font-medium text-gray-50 shadow-sm"
+                                mat-menu-item>Pdf to jpg</button>
+                            <button
+                                class="mat-menu-item t-2 rounded-xl bg-red-900 p-1 py-1 text-xs/7 font-medium text-gray-50 shadow-sm"
+                                mat-menu-item>Pdf to ppt</button>
+                            <button
+                                class="mat-menu-item t-2 rounded-xl bg-red-900 p-1 py-1 text-xs/7 font-medium text-gray-50 shadow-sm"
+                                mat-menu-item>Pdf to Excel</button>
+                            <button
+                                class="mat-menu-item t-2 rounded-xl bg-red-900 p-1 py-1 text-xs/7 font-medium text-gray-50 shadow-sm"
+                                mat-menu-item>Pdf to word</button>
+                            <button
+                                class="mat-menu-item t-2 rounded-xl bg-red-900 p-1 py-1 text-xs/7 font-medium text-gray-50 shadow-sm"
+                                mat-menu-item>Png to Pdf</button>
+                            <button
+                                class="mat-menu-item t-2 rounded-xl bg-red-900 p-1 py-1 text-xs/7 font-medium text-gray-50 shadow-sm"
+                                mat-menu-item>Jpg to pdf</button>
+                            <button
+                                class="mat-menu-item t-2 rounded-xl bg-red-900 p-1 py-1 text-xs/7 font-medium text-gray-50 shadow-sm"
+                                mat-menu-item>ppt to pdf</button>
+                            <button
+                                class="mat-menu-item t-2 rounded-xl bg-red-900 p-1 py-1 text-xs/7 font-medium text-gray-50 shadow-sm"
+                                mat-menu-item>Excel to pdf</button>
+                            <button
+                                class="mat-menu-item t-2 rounded-xl bg-red-900 p-1 py-1 text-xs/7 font-medium text-gray-50 shadow-sm"
+                                mat-menu-item>word to pdf</button>
+                            <!-- <button class="mat-menu-item t-2 rounded-xl bg-red-900 p-1 py-1 text-xs/7 font-medium text-gray-50 shadow-sm" mat-menu-item>Pdf to </button> -->
+                        </mat-menu>
+                    </li>
+                    <li class="list-none">
+                        <button matButton [matMenuTriggerFor]="menus"
+                            class="flex items-center gap-0.5 rounded-2xl bg-gray-950/5 py-0.5 pr-1.5 pl-2.5 text-xs/5 font-medium text-gray-950 tabular-nums hover:bg-gray-950/7.5 data-active:bg-gray-950/7.5 dark:bg-white/10 dark:text-black dark:hover:bg-white/12.5 dark:data-active:bg-white/12.5"
+                            aria-label="Select version of library" id="headlessui-menu-button-«R3pbelb»" type="button"
+                            aria-haspopup="menu" aria-expanded="false" data-headlessui-state="open active" data-open=""
+                            data-active="" aria-controls="headlessui-menu-items-«R5pbelb»" data-headlessui-state>
+                            Edit
+                        </button>
+                        <mat-menu #menus="matMenu">
+                            <button
+                                class="mat-menu-item mt-2 rounded-xl p-1 py-1 text-xs/7 font-medium text-gray-50 shadow-sm"
+                                mat-menu-item>marge pdf</button>
+                            <button
+                                class="mat-menu-item mt-2 rounded-xl p-1 py-1 text-xs/7 font-medium shadow-sm"
+                                mat-menu-item>edit pdf</button>
+                            <button
+                                class="mat-menu-item mt-2 rounded-xl p-1 py-1 text-xs/7 font-medium shadow-sm"
+                                mat-menu-item>split pdf</button>
+                            <button
+                                class="mat-menu-item mt-2 rounded-xl p-1 py-1 text-xs/7 font-medium shadow-sm"
+                                mat-menu-item>Crop pdf</button>
+                            <button
+                                class="mat-menu-item mt-2 rounded-xl p-1 py-1 text-xs/7 font-medium shadow-sm"
+                                mat-menu-item>Delete pdf pages</button>
+                            <button
+                                class="mat-menu-item mt-2 rounded-xl p-1 py-1 text-xs/7 font-medium shadow-sm"
+                                mat-menu-item>Insert pdf pages</button>
+                            <button
+                                class="mat-menu-item mt-2 rounded-xl p-1 py-1 text-xs/7 font-medium shadow-sm"
+                                mat-menu-item>Reorder pdf pages</button>
+                            <button
+                                class="mat-menu-item mt-2 rounded-xl p-1 py-1 text-xs/7 font-medium shadow-sm"
+                                mat-menu-item>Extract pdf pages</button>
+                        </mat-menu>
+                    </li>
+                    <li class="list-none">
+                        <a href="" class="text-sm/6 text-gray-950" [routerLink]="['/tools']" routerLinkActive="router-link-active" >Tools</a>
+                    </li>
+                    <div class="h-6 w-px bg-gray-950/10"></div>
+                </div>
+                <div matButton [matMenuTriggerFor]="men"
+                    class=" min-w-[40px] min-h-[40px] rounded-3xl bg-slate-500 border-2 border-solid border-transparent">
+                </div>
+                <mat-menu #men="matMenu" class="mat_container">
+                    <button [routerLink]="['/user/newuser']"  class=" mt-2 rounded-xl bg-red-900 p-1 py-1 text-xs/7 font-medium text-gray-50 shadow-sm"
+                        mat-menu-item>User</button>
+                    <button [routerLink]="['/user/login']" class=" mt-2 rounded-xl bg-red-900 p-1 py-1 text-xs/7 font-medium text-gray-50 shadow-sm"
+                        mat-menu-item>Login</button>
+                </mat-menu>
+            </div>
+        </div>
+        <div class="flex min-w-44">
+
+        </div>
+    </div>
