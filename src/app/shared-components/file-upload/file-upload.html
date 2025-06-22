@@ -1,0 +1,13 @@
+<div class="border-1 border-solid border-black rounded-xl m-3">
+    <div class="text-center File_type mb-2">
+        <input type="file" name="file" [multiple]="uploadfile" #fileInput hidden autocomplete="off" (change)="uploadfile(fileInput)">
+        <button mat-button (click)="showPhotoPickerFilePicker()">
+            <mat-icon> attach_file</mat-icon>
+            Upload
+        </button><br>
+        {{fileName}} <br>
+        @if (fileslength>0) {
+        <button  matButton="elevated" (click)="clearfile()">clear</button>
+        }
+    </div>
+</div>

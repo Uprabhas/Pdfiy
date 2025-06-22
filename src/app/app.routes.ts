@@ -2,9 +2,12 @@ import { Routes } from '@angular/router';
 import { Notfound } from './shared-components/notfound/notfound';
 import { Home } from './pages/home/home';
 import { Tools } from './pages/tools/tools';
+import { JpgToPdf } from './pages/jpg-to-pdf/jpg-to-pdf';
+import { FileUpload } from './shared-components/file-upload/file-upload';
 
 
 export const routes: Routes = [
+  //component routing 
      {
     path: '',
     component:Home
@@ -16,6 +19,13 @@ export const routes: Routes = [
     component:Tools
     // pathMatch: 'full' as PathMatch,
   },
+  {
+    path: 'jpgtopdf',
+    title:'Convert ipg to pdf format',
+    component:FileUpload
+  },
+
+  //module routing
   {
     path:'user',
     loadChildren:()=>
