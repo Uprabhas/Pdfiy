@@ -1,4 +1,11 @@
 <div class="container">
     <header>Upload the file</header>
-    <app-file-upload/>
+    <app-file-upload
+        #jpgtopdffile
+        [fileName]="Images"
+        [accept]="'image'"
+        [Tooltip]="'Upload a image for convert into Pdf'"
+        [uploadtype]="'single'"
+        (input)="getfiledetail($event)"
+    />
 </div>

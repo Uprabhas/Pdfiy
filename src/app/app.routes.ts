@@ -8,10 +8,10 @@ import { FileUpload } from './shared-components/file-upload/file-upload';
 
 export const routes: Routes = [
   //component routing 
+  // pathMatch: 'full' as PathMatch,
      {
     path: '',
     component:Home
-    // pathMatch: 'full' as PathMatch,
   },
   {
     path: 'tools',
@@ -22,7 +22,7 @@ export const routes: Routes = [
   {
     path: 'jpgtopdf',
     title:'Convert ipg to pdf format',
-    component:FileUpload
+    component:JpgToPdf
   },
 
   //module routing

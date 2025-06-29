@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, viewChild } from '@angular/core';
 import { FileUpload } from "../../shared-components/file-upload/file-upload";
+import {last} from 'lodash'
 
 @Component({
   selector: 'app-jpg-to-pdf',
@@ -9,7 +10,10 @@ import { FileUpload } from "../../shared-components/file-upload/file-upload";
 })
 export class JpgToPdf {
 
-  data: any;
+  Images: any ;
+
+  @ViewChild('jpgtopdffile', { static: false })
+  jpgtopdffile!: FileUpload;
 
   constructor(private file: FileUpload) {
 
@@ -19,8 +23,10 @@ export class JpgToPdf {
 
   }
 
-  uploadfiles() {
-    this.data = this.file.File_type
+  getfiledetail(value:any) {
+    console.log(value)
+    this.Images = last(value.target.value.split('\\'))
+    this.file.uploadfile(value.target.value)
   }
 
 
