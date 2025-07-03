@@ -4,9 +4,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 // @use "themes/tailwind";
-html, body { height: 100vh; width: 100vw; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 @include mat.core();
 
@@ -25,8 +34,7 @@ $md-primary: (
   A200: #8fbeff,
   A400: #5ca0ff,
   A700: #4292ff,
-  contrast: (
-    50: #000000,
+  contrast: (50: #000000,
     100: #000000,
     200: #000000,
     300: #000000,
@@ -58,8 +66,7 @@ $md-secondary: (
   A200: #e1ffb8,
   A400: #ccff85,
   A700: #c1ff6b,
-  contrast: (
-    50: #000000,
+  contrast: (50: #000000,
     100: #000000,
     200: #000000,
     300: #000000,
@@ -80,15 +87,11 @@ $myapp-theme-primary: mat.m2-define-palette($md-primary, 500);
 $myapp-theme-accent: mat.m2-define-palette($md-secondary);
 $myapp-theme-warn: mat.m2-define-palette(mat.$m2-red-palette);
 
-$myapp-theme: mat.m2-define-light-theme(
-  (
-    color: (
-      primary: $myapp-theme-primary,
-      accent: $myapp-theme-accent,
-      warn: $myapp-theme-warn,
-    ),
-  )
-);
+$myapp-theme: mat.m2-define-light-theme((color: (primary: $myapp-theme-primary,
+        accent: $myapp-theme-accent,
+        warn: $myapp-theme-warn,
+      ),
+    ));
 
 .dense-1 {
   @include mat.all-component-densities(-1);
@@ -145,6 +148,7 @@ body {
   display: inline-block;
   height: 32px !important;
   margin-bottom: 8px !important;
+
   &:after {
     content: "";
     display: block;
@@ -154,6 +158,7 @@ body {
     background: linear-gradient(25deg, #3fc5f1, #f4f4f4);
   }
 }
+
 .error-color {
   color: #ff0000;
 }
@@ -165,3 +170,6 @@ body {
 }
 
 
+:host {
+  display: flex;
+}

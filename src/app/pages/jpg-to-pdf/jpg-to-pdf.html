@@ -1,11 +1,27 @@
-<div class="container">
-    <header>Upload the file</header>
-    <app-file-upload
-        #jpgtopdffile
-        [fileName]="Images"
-        [accept]="'image'"
-        [Tooltip]="'Upload a image for convert into Pdf'"
-        [uploadtype]="'single'"
-        (input)="getfiledetail($event)"
-    />
+<div class="m-[6rem] min-h-lvh">
+    <mat-card class="container shadow-xl/20 rounded-3xl ">
+        <div class="row p-8 min-h-lvh">
+            <div class="col-6">
+                <div class="flex font-semibold text-3xl font-serif m-3"> <img src="../assets/image/logo.png" class="h-10 w-10 mx-3"
+                        alt="" srcset="" />
+                        <p class="pacifico-regular">Pdfily</p>
+                    </div>
+                <mat-card-title>
+                    Jpg to Pdf convertor
+                </mat-card-title>
+                <mat-card-subtitle>
+                    Upload the Jpg format image and convert into Pdf form.
+                </mat-card-subtitle>
+            </div>
+            <div class="col-6  flex align-items-center justify-center">
+                <div class="">
+                    <div>
+                        <app-file-upload #jpgtopdffile [fileName]="Images" [accept]="'image'"
+                            [Tooltip]="'Upload a image for convert into Pdf'" [uploadtype]="'single'"
+                            (input)="getfiledetail($event)" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card>
 </div>

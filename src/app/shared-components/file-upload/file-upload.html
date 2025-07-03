@@ -1,14 +1,21 @@
-<div class="border-1 border-solid border-black rounded-xl m-3">
-    <div class="text-center File_type mb-2">
-        <input type="file" name="file" [multiple]="uploadfile" #fileInput hidden autocomplete="off" (change)="uploadfile($event.target)">
-        <button mat-button (click)="showPhotoPickerFilePicker()">
+<div class="flex justify-center rounded-xl m-3">
+    <div class="text-center File_type ">
+        <input type="file" name="file" [multiple]="uploadfile" #fileInput hidden autocomplete="off"
+            (change)="uploadfile($event.target)">
+        <button mat-button (click)="showPhotoPickerFilePicker()" class="bg-blue-500 text-cyan-100">
             <mat-icon> attach_file</mat-icon>
             Upload
         </button>
         @if (fileslength>0) {
-            <br>{{fileName}} 
-            <br>
-        <button  matButton="elevated" (click)="clearfile()">clear</button>
+        <div class="m-1">
+        <mat-chip>
+            <div class="flex justify-between mt-2">
+                <div class="">{{fileName}}</div>
+                <div (click)="clearfile()"><mat-icon>close</mat-icon></div>
+            </div>
+        </mat-chip>
+        </div>
+
         }
     </div>
 </div>

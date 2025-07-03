@@ -1,14 +1,16 @@
 import { Component, ViewChild, viewChild } from '@angular/core';
 import { FileUpload } from "../../shared-components/file-upload/file-upload";
 import {last} from 'lodash'
+import { AppMaterialModule } from '../../helper/app-material/app-material-module';
+
 
 @Component({
   selector: 'app-jpg-to-pdf',
-  imports: [FileUpload],
+  imports: [FileUpload,AppMaterialModule],
   templateUrl: './jpg-to-pdf.html',
   styleUrl: './jpg-to-pdf.scss'
 })
-export class JpgToPdf {
+export class JpgToPdf  {
 
   Images: any ;
 
