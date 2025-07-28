@@ -31,5 +31,9 @@ export const routes: Routes = [
     loadChildren:()=>
       import('./pages/user/user-module').then((m)=>m.UserModule)
   },
+  {
+    path:'compress',
+    loadChildren:()=> import('./pages/compress-master/compress-master-module').then((m)=>m.CompressMasterModule)
+  },
   { path: '**', component: Notfound},
 ];

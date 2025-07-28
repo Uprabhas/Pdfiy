@@ -1,0 +1,42 @@
+<div class="common h-full">
+    <div class="row m-3">
+        <div class="text-center text-xl">Base 64 Compersser</div>
+    </div>
+    <div class="row m-2">
+        <div class="text-center flex">
+            <div class="col-6">
+                <mat-form-field >
+                    <mat-label>Size of File</mat-label>
+                    <input matInput placeholder="Enter the size" [formControl]="SizeofQuality">
+                    <mat-hint>file size In MB like 0.2 & 1</mat-hint>
+                </mat-form-field>
+            </div>
+            <div class="col-6">
+                <mat-form-field>
+                    <mat-label>Image Types</mat-label>
+                    <mat-select matNativeControl [(ngModel)]="type">
+                        <mat-option value="jpeg">jpeg</mat-option>
+                        <mat-option value="png">png</mat-option>
+                        <mat-option value="svg">svg</mat-option>
+                        <mat-option value="ai">ai</mat-option>
+                        <mat-option value="gif">gif</mat-option>
+                        <mat-option value="webp">webp</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <div class="row m-auto">
+            <div class="col-12 text-center">
+                <textarea class="border-solid border-1 border-black rounded-md p-1" id="w3review" name="w3review"
+                    rows="8" cols="100" type="text" [formControl]="Newbase64"></textarea>
+                <div class="m-2">
+                    <button matButton="elevated" (click)="getbase64()" matTooltip="Compress the base64">Compress</button>
+                </div>
+                <textarea class="border-solid border-1 border-black rounded-md p-1" id="w3review" name="w3review"
+                    rows="8" cols="100" [formControl]="compressbase64"></textarea>
+            </div>
+        </div>
+    </div>
+</div>

@@ -14,7 +14,7 @@ const routes: Routes = [
         path: 'newuser', title: "New user", component: NewUser
       },
       {
-        path: '', redirectTo: 'login', pathMatch:'full' 
+        path: '', redirectTo: 'user/login', pathMatch:'full' 
       }
     ]
   }

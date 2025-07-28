@@ -34,6 +34,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import {FormsModule} from '@angular/forms';
 import {MatRippleModule} from '@angular/material/core';
+import {ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -75,6 +76,7 @@ import {MatRippleModule} from '@angular/material/core';
     MatButtonToggleModule,
     FormsModule,
     MatRippleModule,
+    ReactiveFormsModule
   ],
 })
 export class AppMaterialModule {}

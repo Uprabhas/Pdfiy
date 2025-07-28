@@ -88,7 +88,7 @@ export class FileUpload implements OnInit {
       if (this.files.length == 0) {
         this.File_type = file?.type;
         this.fileName = `${file!.name} (${formatBytes(file!.size)})`;
-        this.files.push(`${file!.name} (${formatBytes(file!.size)})`);
+        this.files.push(file);
         this.fileslength = this.files.length
         console.log(this.File_type);
       }
@@ -96,7 +96,7 @@ export class FileUpload implements OnInit {
         this.files = [];
         this.File_type = file?.type;
         this.fileName = `${file!.name} (${formatBytes(file!.size)})`;
-        this.files.push(`${file!.name} (${formatBytes(file!.size)})`);
+        this.files.push(file);
         this.fileslength = this.files.length
         console.log(this.File_type);
       }
