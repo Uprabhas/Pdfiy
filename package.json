@@ -22,6 +22,7 @@
     "@angular/router": "^20.0.0",
     "@types/snapsvg": "^0.5.8",
     "bootstrap": "^5.3.6",
+    "jspdf": "^3.0.1",
     "lodash": "^4.17.21",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

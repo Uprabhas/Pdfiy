@@ -33,7 +33,7 @@ export class Base64Compresser {
         const newHeight = Math.sqrt(maxSizeInBytes / aspectRatio);
         canvas.width = newWidth;
         canvas.height = newHeight;
-        // ctx.drawImage(img, 0, 0, newWidth, newHeight);
+        ctx?.drawImage(img, 0, 0, newWidth, newHeight);
         let quality = 1;
         let dataURL = canvas.toDataURL(`image/${type}`, quality);
         resolve(dataURL);

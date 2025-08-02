@@ -20,13 +20,14 @@ export class FileUpload implements OnInit {
   @Input() fileMaxCount = 1;
   @Input() FileMaxSize = 30;
   @Input() Tooltip = '';
-  @Input() fileName = '';
+  // @Input() fileName = '';
   @Input() uploadtype = 'single';
   @Input() accept = ''
   @Output() fileRemoved: EventEmitter<any> = new EventEmitter();
   @Output() validationError: EventEmitter<any> = new EventEmitter();
   filetype = ".jpg,.png,.jpeg,.pdf,.ppt,.xlsx,.docx"
   acceptExtension = this.filetype;
+  fileName='';
 
   File_type: string = '';
   @ViewChild('fileInput') fileUpload!: ElementRef<HTMLInputElement>;
