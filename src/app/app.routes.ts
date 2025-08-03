@@ -2,7 +2,6 @@ import { Routes } from '@angular/router';
 import { Notfound } from './shared-components/notfound/notfound';
 import { Home } from './pages/home/home';
 import { Tools } from './pages/tools/tools';
-import { JpgToPdf } from './pages/jpg-to-pdf/jpg-to-pdf';
 import { FileUpload } from './shared-components/file-upload/file-upload';
 
 
@@ -19,11 +18,6 @@ export const routes: Routes = [
     component:Tools
     // pathMatch: 'full' as PathMatch,
   },
-  {
-    path: 'jpgtopdf',
-    title:'Convert ipg to pdf format',
-    component:JpgToPdf
-  },
 
   //module routing
   {
@@ -34,6 +28,10 @@ export const routes: Routes = [
   {
     path:'compress',
     loadChildren:()=> import('./pages/compress-master/compress-master-module').then((m)=>m.CompressMasterModule)
+  },
+  {
+    path:'convert',
+    loadChildren:()=>import('./pages/convert-master/convert-master-module').then((m)=>m.ConvertMasterModule)
   },
   { path: '**', component: Notfound},
 ];

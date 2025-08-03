@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { JpgToPdf } from './jpg-to-pdf';
+import { ImageToPdf } from './image-to-pdf';
 
-describe('JpgToPdf', () => {
-  let component: JpgToPdf;
-  let fixture: ComponentFixture<JpgToPdf>;
+describe('ImageToPdf', () => {
+  let component: ImageToPdf;
+  let fixture: ComponentFixture<ImageToPdf>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [JpgToPdf]
+      imports: [ImageToPdf]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(JpgToPdf);
+    fixture = TestBed.createComponent(ImageToPdf);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

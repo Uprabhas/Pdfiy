@@ -1,4 +1,4 @@
-<div class="m-[5rem]">
+<div class="m-[5rem] min-h-screen">
     <mat-card class="shadow-xl/20 rounded-4xl min-h-[300px]">
         <div class="row p-8">
             <div class="col-6 p-4">
@@ -13,12 +13,17 @@
                     Upload the Jpg format image and convert into Pdf form.
                 </mat-card-subtitle>
             </div>
-            <div class="col-6 flex align-items-center justify-center">
-                <div class="">
-                    <div>
-                        <app-file-upload #jpgtopdffile [fileName]="Images" [accept]="'image'"
+            <div class="col-6 align-items-center justify-center">
+                <div class="col-12">
+                    <app-file-upload #jpgtopdffile [accept]="'image'"
                             [Tooltip]="'Upload a image for convert into Pdf'" [uploadtype]="'single'"
-                            (input)="getfiledetail($event)" />
+                            (input)="onFileChange($event.target)" />
+                </div>
+                <div class="col-12">
+                    <div class="justify-center">
+                        <button mat-raised-button class="button" (click)="onPdfConvert()">
+                        Download Pdf <mat-icon>cloud_download</mat-icon>
+                    </button>
                     </div>
                 </div>
             </div>
