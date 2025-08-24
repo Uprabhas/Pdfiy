@@ -1,0 +1,15 @@
+.body{
+    width:100vw;
+    overflow: hidden;
+}
+
+app-footer{
+        position: absolute;
+        bottom:0;
+        width:100vw;
+        height: 2.5rem;
+        clear: both;
+        text-align: center;
+        // background-color: darkgray;
+        // z-index: 1000;
+    }

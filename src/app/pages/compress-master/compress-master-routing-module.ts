@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Base64Compresser } from './base64-compresser/base64-compresser';
 import { Pdf } from './pdf/pdf';
-import { Image } from './image/image';
+
+import { ImageCompress } from './image-compress/image-compress';
 
 const routes: Routes = [
   {
@@ -15,7 +16,7 @@ const routes: Routes = [
         path:'pdfcompresser', title:'PDF file compress', component:Pdf
       },
       {
-        path:'imagecompresser', title:'image file compress', component:Image
+        path:'imagecompresser', title:'image file compress', component:ImageCompress
       }
     ]
   }

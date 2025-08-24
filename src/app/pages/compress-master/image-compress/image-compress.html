@@ -1,0 +1,37 @@
+<div class="m-[5rem]">
+    <mat-card class="shadow-xl/20 rounded-4xl min-h-[300px]">
+        <div class="row p-8">
+            <div class="col-6 p-4">
+                <div class="flex font-semibold text-3xl font-serif m-3"> <img src="../assets/image/logo.png" class="h-10 w-10 mx-3"
+                        alt="image" srcset="" />
+                        <p class="pacifico-regular">Pdfily</p>
+                    </div>
+                <mat-card-title>
+                    Jpg to Pdf convertor
+                </mat-card-title>
+                <mat-card-subtitle>
+                    Upload the Jpg format image and convert into Pdf form.
+                </mat-card-subtitle>
+                <br>
+                <mat-card-content>
+                    <strong>Note..</strong>
+                    <p>Image should been less than 10MB size.</p>
+                    <p>Compress quality is max 1MB Image format.</p>
+                </mat-card-content>
+            </div>
+            <div class="col-6 flex align-items-center ">
+                <div class="col-12">
+                    <app-file-upload #jpgtopdffile [accept]="'image'"
+                            [Tooltip]="'Upload a image for convert into Pdf'" [uploadtype]="'single'"
+                            (input)="onFileSelected($event.target)" />
+                
+                    <div class="mt-4 flex justify-center">
+                        <button mat-raised-button class="button" (click)="downloadCompressedImage()">
+                        Download Pdf <mat-icon>cloud_download</mat-icon>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+</div>

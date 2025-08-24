@@ -37,7 +37,7 @@ export class Base64Compresser {
         let quality = 1;
         let dataURL = canvas.toDataURL(`image/${type}`, quality);
         resolve(dataURL);
-        reject("error");
+        // reject("error");
       };
     });
   }
